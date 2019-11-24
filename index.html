@@ -1,1 +1,148 @@
-Hello World
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Kulim+Park|Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+
+
+      <div class="banner">
+        <div class="container">
+          <h1>Creating together</h1>
+          <p>Responsive websites and applications for all purposes. Let's plan your new project together.</p>
+          <p>Please see below examples of some applications realized so far.</p>
+
+
+          <a href = "mailto:maria.vihla@gmail.com" target="_blank"><button class="button">Contact me</button></a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <a href="https://www.famtravel.eu" target="_blank">
+              <img src="images/famtravel.png" alt="Famtravel">
+            </a>
+            <div class="card-content">
+              <h3>Famtravel</h3>
+              <p>Famtravel is an application for families travelling in European cities. It is a crowdsourcing platform for parents who want to share information and look for it. The app was originally created at LeWagon coding bootcamp according to my idea and I have been developing it afterwards on my own.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="https://superpower-to-rent.herokuapp.com/" target="_blank">
+              <img src="images/superpower_rental.png" alt="superpower app">
+            </a>
+            <div class="card-content">
+              <h3>Superpower rental app</h3>
+              <p>This Rails MVC application was made at a LeWagon coding bootcamp during five days, together with three other students. It is practically a clone of the AirBnB site, we were just renting out superpowers rather than accomodation.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="https://playa-maria-bar.herokuapp.com/cocktails" target="_blank">
+              <img src="images/cocktail_playa.png" alt="cocktail app">
+            </a>
+            <div class="card-content">
+              <h3>Cocktail recipe app</h3>
+              <p>Another excercise site that I coded and designed. Search for a tasty drink or add your own favourite cocktail recipe.</p>
+            </div>
+          </div>
+
+          <div class="card" id="introduction">
+            <a href="images/cv.pdf" target="_blank">
+              <img src="https://images.unsplash.com/photo-1528660544347-95a93c58e424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Maria Manninen">
+            </a>
+            <div class="card-content">
+              <h3>Who am I?</h3>
+              <p>Maria Manninen: a Finnish web developer based in Luxembourg. Started a new career in coding and is thrilled to learn new things every day. Happy to discuss any work opportunities or projects in English, French, Spanish, Finnish or German.</p>
+              <a href = "mailto:maria.vihla@gmail.com" target="_blank"><button class="
+               btn-small">Contact me</button></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="logos">
+          <div class="logobox">
+            <img src="images/html5.png" alt="HTML5" class="logo_img">
+            <p class="logo-text">HTML5</p>
+          </div>
+          <div class="logobox">
+            <img src="images/css.png" alt="CSS" class="logo_img">
+            <p class="logo-text">CSS3</p>
+          </div>
+          <div class="logobox">
+            <img src="images/sass.png" alt="SASS" class="logo_img">
+            <p class="logo-text">SCSS</p>
+          </div>
+          <div class="logobox">
+            <img src="images/js.jpg" alt="JavaScript" class="logo_img">
+            <p class="logo-text">ES6</p>
+          </div>
+          <div class="logobox">
+            <img src="images/jQuery.png" alt="jQuery" class="logo_img">
+            <p class="logo-text">jQuery</p>
+          </div>
+          <div class="logobox">
+            <img src="images/ruby.jpg" alt="Ruby" class="logo_img">
+            <p class="logo-text">Ruby 2.6</p>
+          </div>
+          <div class="logobox">
+            <img src="images/rails.jpg" alt="RubyOnRails" class="logo_img">
+            <p class="logo-text">Ruby on Rails 6.0</p>
+          </div>
+          <div class="logobox">
+            <img src="images/postgreSQL.png" alt="PostgreSQL" class="logo_img">
+            <p class="logo-text">PostgreSQL</p>
+          </div>
+          <div class="logobox">
+            <img src="images/figma.png" alt="Figma" class="logo_img">
+            <p class="logo-text">Figma</p>
+          </div>
+          <div class="logobox">
+            <img src="images/github.png" alt="GitHub" class="logo_img">
+            <p class="logo-text">GitHub</p>
+          </div>
+          <div class="logobox">
+            <img src="images/heroku.png" alt="Heroku" class="logo_img">
+            <p class="logo-text">Heroku</p>
+          </div>
+          <div class="logobox">
+            <img src="images/photoshop.svg" alt="Photoshop" class="logo_img">
+            <p class="logo-text">Photoshop</p>
+          </div>
+          <div class="logobox">
+            <img src="images/DW.png" alt="Dreamweaver" class="logo_img">
+            <p class="logo-text">Dreamweaver</p>
+          </div>
+          <div class="logobox">
+            <img src="images/Illustrator.png" alt="Illustrator" class="logo_img">
+            <p class="logo-text">Illustrator</p>
+          </div>
+        </div>
+        <footer>
+          <div><a href = "mailto:maria.vihla@gmail.com" target="_blank"><img src="images/email.png" alt="email"></a></div>
+          <div><p class="copyright">Copyright 2019 Maria Manninen Luxembourg</p></div>
+          <div><a href = "https://www.linkedin.com/in/maria-vihla-manninen/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></div>
+        </footer>
+      </div>
+
+    <script>
+      $(document).ready(() =>{
+        $('.logo-text').hide();
+      });
+      $('.logo_img').on('click', (event) => {
+        console.log("test");
+          $(event.currentTarget).next('.logo-text').show();
+      }).on('mouseleave', (event) => {
+        $(event.currentTarget).next('.logo-text').hide();
+      });
+
+
+    </script>
+  </body>
+</html>
