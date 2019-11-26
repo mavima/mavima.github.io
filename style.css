@@ -7,7 +7,7 @@ body {
 
 
 .banner {
-  background-image: linear-gradient(rgba(245, 244, 244, 0.5), rgba(245, 244, 244, 1)), url(https://images.unsplash.com/reserve/wPCyys8TPCHY3GXm2N2D_ssp_inthewoods_1.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-image: linear-gradient(rgba(245, 244, 244, 0.3), rgba(245, 244, 244, 1)), url(https://images.unsplash.com/photo-1550537687-703259b88fc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,25 +28,27 @@ font-size: 20px !important;
   color: white;
   margin-top: 30px;
   padding: 10px 15px;
-  background-color: #2E5B2E;
+  background-color: #47216D;
   border-radius: 6px;
   font-size: 20px;
   opacity: 0.9;
 }
 
 .button:hover {
-  background-color: rgba(46, 91, 46, 0.8);
+  background-color: rgb(97,45,148, 0.8);
   padding: 11px 16px;
+  cursor: pointer;
 }
 
 .btn-small {
   color: white;
   margin-top: 5px;
   padding: 5px 10px;
-  background-color: #2E5B2E;
+  background-color: #47216D;
   border-radius: 6px;
   font-size: 15px;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 
@@ -54,7 +56,7 @@ h1 {
   font-size: 55px;
   font-family: 'Libre Franklin', sans-serif;
   color: black;
-  padding-top: 150px;
+  padding-top: 40vh;
   margin-top: 0px !important;
   text-shadow: 0.5px 0.5px 4px rgba(245, 244, 244, 0.8);
 }
@@ -62,7 +64,6 @@ h1 {
 .container {
   width: 80%;
   margin: auto;
-
 }
 
 .cards {
@@ -100,6 +101,11 @@ h1 {
   flex-grow: 1;
 }
 
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .cards h3 {
   opacity: 0.8;
 }
@@ -108,9 +114,69 @@ h1 {
   opacity: 0.7;
 }
 
+.lewagon {
+  color: #47216D;
+  font-weight: bolder;
+}
+
+.email {
+  cursor: url("images/paper-plane.png"), default;
+}
+
 .infobox {
   background-color: #E4E4E4;
   padding: 15px;
+}
+
+.slideshow {
+  position: relative;
+}
+
+/*.myslide {
+  display: none;
+  max-width: 100%;
+  margin: auto;
+}*/
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .logos {
