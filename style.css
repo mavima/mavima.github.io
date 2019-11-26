@@ -191,10 +191,10 @@ footer img {
     grid-template-columns: 1fr;
   }
 
-/*  h1 {
+  h1 {
     font-size: 45px;
     padding-top: 30vh;
-  }*/
+  }
 
     .logos {
     grid-template-columns: repeat(4, 1fr);
