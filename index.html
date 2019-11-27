@@ -2,6 +2,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Kulim+Park|Libre+Franklin&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
 
@@ -135,8 +136,7 @@
         $('.logo-text').hide();
       });
       $('.logo_img').on('click', (event) => {
-        console.log("test");
-          $(event.currentTarget).next('.logo-text').show();
+          $(event.currentTarget).next('.logo-text').toggle();
       }).on('mouseleave', (event) => {
         $(event.currentTarget).next('.logo-text').hide();
       });
