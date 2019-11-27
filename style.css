@@ -180,23 +180,43 @@ footer img {
   text-align: center;
 }
 
-@media(max-width: 992px) {
+/*@media screen and (max-width: 992px) {
   .cards {
     grid-template-columns: 1fr, 1fr;
   }
-}
+}*/
 
-@media(max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+  }
   .cards {
     grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+
   }
 
   h1 {
-    font-size: 45px;
+    font-size: 35px;
     padding-top: 30vh;
   }
 
     .logos {
     grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+  }
+
+
+
+  footer {
+    width: 90%;
   }
 }
