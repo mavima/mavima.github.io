@@ -1,0 +1,155 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  margin-top: -3vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('../images/background.jpeg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.titlebox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10vh 0 15vh 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 6vh;
+  font-family: 'Mate SC', serif;
+  font-size: 3rem;
+}
+
+button {
+  background-color: #e6eeff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  width: 80px;
+  margin: auto;
+  border: 1px solid #85e0e0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-box {
+  display: flex;
+  width: 70%;
+  max-width: 600px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.display {
+  width: 170px;
+  margin: auto;
+  margin-top: 15px;
+  height: fit-content;
+  padding: 1rem;
+  background-color: #e6eeff;
+  border: 1px solid #600080;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  margin: 1rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.previous-shape {
+  display: block;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}
+
+.previous-grid {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #600080;
+  border-radius: 2px;
+  height: 80px;
+  width: 80px;
+
+}
+
+.previous-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.game {
+  width: fit-content;
+  margin: auto;
+}
+
+.grid {
+  margin: auto;
+  margin-top: 2vh;
+  background-color: blue;
+  height: 400px;
+  width: 200px;
+  border: 1px solid #600080;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  height: 20px;
+  width: 20px;
+}
+
+/* tetrominoes */
+.block {
+  background-color: #00b300 !important;
+  border: 0.5px solid #00cc00;
+  box-sizing: border-box;
+}
+
+/* grid background */
+.block0 {
+  background-color: #e6eeff;
+}
+
+/* frozen blocks */
+.block2 {
+  background-color: #85e0e0 !important;
+  border: 0.5px solid #a4e8e8;
+  box-sizing: border-box;
+}
+
+/* bottom line */
+.block3 {
+  background-color: #00b3b3;
+  height: 10px;
+}
+
