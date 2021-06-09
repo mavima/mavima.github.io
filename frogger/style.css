@@ -1,0 +1,135 @@
+body {
+  background: url('./images/urban-park.jpeg') no-repeat center center;
+  background-size: cover;
+  font-family: 'Pangolin', 'sans-serif';
+}
+
+h1 {
+  text-align: center;
+}
+
+.info {
+  width: 540px;
+  /*margin: auto;*/
+  display: flex;
+  justify-content: space-around;
+  margin: 2vh auto;
+}
+
+h3 {
+  margin: none !important;
+}
+
+#button {
+  height: 35px;
+  padding: 5px 8px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #5EB944;
+  color: white;
+  border: none;
+  font-family: 'Pangolin', 'sans-serif';
+}
+
+.grid {
+  width: 540px;
+  height: 540px;
+  margin: auto;
+  background-color: #BFE969;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #5EB944;
+  border-bottom: none;
+}
+
+.grid div {
+  height: 60px;
+  width: 60px;
+}
+
+.city {
+  background-image: url('./images/city-long.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #A0DAEE !important;
+}
+
+.ending-block {
+  background: url('./images/frog_girl.png') no-repeat center center;
+  background-size: contain;
+  height: 52px !important;
+}
+
+/*.road {
+  background-color: grey;
+}
+*/
+
+.c1-right {
+  background: url('./images/green_car_bg.jpg') no-repeat center center;
+  background-size: contain;
+  background-color: black;
+}
+
+.c1-left {
+  background: url('./images/red_car.png') no-repeat center center;
+  background-size: contain;
+  background-color: black !important;
+}
+
+.c2, .c3 {
+  background-color: black !important;
+}
+
+.car-right {
+  border-bottom: 2px solid grey;
+  box-sizing: border-box;
+}
+
+.l1, .l2, .l3, .log {
+  background: url('./images/log.jpg') no-repeat center center;
+  border-bottom: 2px solid #5E89B5;
+  border-top: 2px solid #5E89B5;
+  background-size: contain;
+  background-color: #6B4717 !important;
+}
+
+.l4 {
+  background: url('./images/croc.png') no-repeat center center;
+  z-index: 100 !important;
+  background-size: contain;
+  border-bottom: 2px solid #5E89B5;
+  border-top: 2px solid #5E89B5;
+  background-color: #5E89B5 !important;
+}
+
+.l5{
+  background: url('./images/water.jpeg') no-repeat center center;
+  background-size: contain;
+  border-bottom: 2px solid #5E89B5;
+  border-top: 2px solid #5E89B5;
+  background-color: #5E89B5 !important;
+}
+
+
+
+.frog {
+  background: url('./images/frogger.png') no-repeat center center;
+  background-size: contain;
+
+  transition: height 2s;
+}
+
+.frog :focus {
+  height: 95%;
+}
+
+.dead {
+  background: url('./images/skull.jpeg') no-repeat center center;
+  background-size: contain;
+}
+
+.victory {
+  background: url('./images/heart.png') no-repeat center center;
+  background-size: contain;
+}

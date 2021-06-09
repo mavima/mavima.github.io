@@ -1,0 +1,91 @@
+body {
+  font-family: 'Pangolin', 'sans-serif';
+  /*width: 600px;*/
+  background: url('./images/garden.jpg') no-repeat center center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: auto;
+}
+
+.grid {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #326a02;
+  background-color: #d8ffc1;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+}
+
+.snake {
+  background-color: #239e44;
+  border-radius: 40%;
+  border: 2px dotted #9bde2f;
+  box-sizing: border-box;
+}
+
+.apple {
+  background: url('./images/apple.png') no-repeat center center
+}
+
+img {
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+.start {
+  background-color: #9bde2f;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 0.5px solid #9bde2f;
+  font-size: 16px;
+  margin: 2vh 0;
+  width: 100px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Pangolin', 'sans-serif';
+}
+
+.score {
+  background-color: #9bde2f;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  margin: 2vh 0;
+  width: 100px;
+}
+
+.gameover {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 25px;
+  background: #d8ffc1;
+  padding: 3px 0;
+  border-radius: 6px;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+h1 {
+width: 300px;
+margin: auto;
+text-align: center;
+}

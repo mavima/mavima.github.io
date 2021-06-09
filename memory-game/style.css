@@ -1,0 +1,109 @@
+
+.container {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1351,w_2400,x_0,y_0/v1571796144/shape/mentalfloss/604599-gettyimages-1083893950.jpg?itok=om3ZU-xi') no-repeat center center fixed;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-family: 'Itim', 'sans-serif';
+}
+
+
+.grid {
+  height: 50vh;
+  width: min-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  grid-gap: 1rem;
+}
+
+img {
+  width: 100px;
+}
+
+.score {
+  background-color: #92CDED;
+  padding: 1rem;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.button-box {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+button {
+  margin: 0px !important;
+  border: 0.5px solid #92CDED;
+  font-family: 'Itim', 'sans-serif';
+  font-size: 1.2rem;
+}
+
+button:hover {
+  font-size: 1.3rem;
+  background-color: #BDE1F4;
+}
+
+.header {
+  background-color: #92CDED;
+  padding: 1px 1rem;
+  border-radius: 10px;
+  width: fit-content;
+  margin: auto;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+.clicked {
+  pointer-events: none;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    background: url('images/forest.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .grid {
+    margin: auto;
+  }
+
+  img {
+    width: 60px;
+  }
+
+}
+

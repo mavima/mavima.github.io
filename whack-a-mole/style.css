@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  background: url('./images/grass.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  cursor: url('./images/hammer.svg'), default;
+  font-family: 'Pangolin', 'sans-serif';
+  /*cursor: pointer;*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.info {
+  background-color: #8feba1;
+  padding: 1rem;
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#start {
+  padding: 3px 5px;
+  font-size: 1.3rem;
+  background-color: #1f702f;
+  border: 1px solid #1f702f;
+  border-radius: 9px;
+  color: white;
+  cursor: pointer;
+}
+
+.grid {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 5vh;
+  left: 25%;
+  margin: auto;
+
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.hole:after {
+  display: block;
+  background: url(./images/dirt.png) bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height:80px;
+  position: absolute;
+  z-index: 2;
+  bottom: -20px;
+}
+
+.mole {
+  background: url('./images/miner.png') bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .grid {
+    width: 80%;
+    height: 60vh;
+    position: absolute;
+    bottom: 5vh;
+    left: 10%;
+    margin-bottom: 0;
+  }
+}
