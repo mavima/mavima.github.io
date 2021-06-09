@@ -12,6 +12,8 @@ const height = 20
 const start = document.querySelector('#start-btn')
 const scoreDisplay = document.querySelector('.score-display')
 const linesDisplay = document.querySelector('.lines-display')
+const info = document.querySelector('.info')
+const instructions = document.querySelector('.instructions')
 
 let currentIndex = 0
 let currentRotation = 0
@@ -214,6 +216,8 @@ function displayShape() {
 }
 
 start.addEventListener('click', () => {
+  // instructions.classList.add('hide')
+  // info.classList.remove('hide')
   if (timerId) {
     clearInterval(timerId)
     timerId = null

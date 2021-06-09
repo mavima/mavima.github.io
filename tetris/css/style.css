@@ -1,7 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  margin-top: -3vh;
+  margin-top: -6vh;
   font-family: 'Lato', sans-serif;
 }
 
@@ -37,20 +37,28 @@ body {
 h1 {
   text-align: center;
   margin-top: 6vh;
+  margin-bottom: 0;
   font-family: 'Mate SC', serif;
   font-size: 3rem;
 }
 
 button {
-  background-color: #e6eeff;
+  background-color: #85e0e0;
   padding: 6px 12px;
   border-radius: 6px;
   width: 80px;
   margin: auto;
-  border: 1px solid #85e0e0;
+  border: 1px solid #00b3b3;
   text-align: center;
   font-size: 1.5em;
   font-family: 'Lato', sans-serif;
+}
+
+.instructions {
+  width: 30%;
+  margin: auto;
+  z-index: 10;
+  background-color: #85e0e0;
 }
 
 .main-box {
@@ -115,8 +123,8 @@ h2 {
   margin: auto;
   margin-top: 2vh;
   background-color: blue;
-  height: 400px;
-  width: 200px;
+  height: 600px;
+  width: 300px;
   border: 1px solid #600080;
   border-radius: 2px;
   display: flex;
@@ -124,8 +132,8 @@ h2 {
 }
 
 div {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 /* tetrominoes */
@@ -153,3 +161,29 @@ div {
   height: 10px;
 }
 
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    height: 400px;
+    width: 200px;
+  }
+
+  div {
+    height: 20px;
+    width: 20px;
+  }
+
+  .previous-grid {
+    height: 80px;
+    width: 80px;
+
+  }
+
+  .previous-grid div {
+    height: 20px;
+    width: 20px;
+  }
+}
