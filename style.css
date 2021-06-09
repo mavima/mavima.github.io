@@ -24,7 +24,7 @@ font-size: 25px;
 font-size: 20px !important;
 }
 
-button {
+.big-button {
   color: white;
   margin-top: 30px;
   padding: 10px 15px;
@@ -34,7 +34,7 @@ button {
   opacity: 0.9;
 }
 
-.button:hover {
+.big-button:hover {
   background-color: rgb(97,45,148, 0.8);
   padding: 11px 16px;
   cursor: pointer;
@@ -48,6 +48,12 @@ button {
   border-radius: 6px;
   font-size: 15px;
   opacity: 0.9;
+  cursor: pointer;
+}
+
+.btn-small:hover {
+  background-color: rgb(97,45,148, 0.8);
+  padding: 6px 11px;
   cursor: pointer;
 }
 
