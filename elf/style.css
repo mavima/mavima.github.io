@@ -94,6 +94,7 @@ body {
     width: 540px;
     height: 540px;
     margin: auto;
+    margin-top: 1vh;
     
     /* background-color: #BFE969; */
     display: flex;
@@ -232,6 +233,10 @@ body {
         height: 35px;
         width: 35px;
       }
+
+    .mobile-navigation {
+        margin-bottom: 5vh;
+    }
   
   
       .mobile-navigation p {
@@ -239,7 +244,6 @@ body {
         width: 15px;
         font-size: 15px;
         margin: auto;
-        margin-bottom: 5vh;
       }
     }
   

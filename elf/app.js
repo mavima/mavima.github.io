@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const jumpSound = document.querySelector('#jumping')
     const winSound = document.querySelector('#winning')
     const loseSound = document.querySelector('#losing')
-    let currentIndex = 4
+    let currentIndex = 6
     let currentTime = 20
     let timerId
     let steps = 0
