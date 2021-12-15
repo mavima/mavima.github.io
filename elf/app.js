@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
       buttonDown.addEventListener('click', moveFrogMobileDown);
       currentTime = 20
       timeLeft.textContent = currentTime
-      currentIndex = 4
+      currentIndex = 6
       squares[currentIndex].classList.add('frog')
   
       result.innerHTML = ''

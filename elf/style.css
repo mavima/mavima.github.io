@@ -212,7 +212,7 @@ body {
   @media (max-width: 550px) {
   
       .container {
-        bottom: 2vh;
+        bottom: 1vh;
       }
 
       .top-container {
@@ -234,9 +234,9 @@ body {
         width: 35px;
       }
 
-    .mobile-navigation {
+    /* .mobile-navigation {
         margin-bottom: 2vh;
-    }
+    } */
   
   
       .mobile-navigation p {
@@ -248,9 +248,6 @@ body {
     }
   
     @media (max-width: 320px) {
-      .container {
-        bottom: 1vh;
-      }
   
       .mobile-navigation p {
         height: 10px;
