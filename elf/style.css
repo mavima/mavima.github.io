@@ -1,0 +1,256 @@
+body {
+    /* background: url('./images/urban-park.jpeg') no-repeat center center; */
+    background: url('./images/winter.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Pangolin', 'sans-serif';
+  }
+  
+  .container {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .top-container {
+      display: flex;
+      justify-content: space-around;
+      max-width: 540px;
+      margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .info {
+    /*margin: auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2vh auto;
+  }
+  
+  h3 {
+    margin: none !important;
+  }
+  
+  #button {
+    height: 35px;
+    padding: 5px 8px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: red;
+    /* background-color: #5EB944; */
+    color: white;
+    border: 1px solid red;
+    font-family: 'Pangolin', 'sans-serif';
+    font-size: 1rem;
+    width: fit-content;
+  }
+  
+  .mobile-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 150px;
+    margin: auto;
+    margin-top: 2vh;
+  }
+  
+  .mobile-navigation > p {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .up {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .right {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .down {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  
+  .grid {
+    width: 540px;
+    height: 540px;
+    margin: auto;
+    
+    /* background-color: #BFE969; */
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #5EB944; */
+    border-bottom: none;
+  }
+  
+  .grid div {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .background {
+    background-color: #DFE2EC;
+  }
+  
+  .city {
+    background-color: transparent;
+    /* background-image: url('./images/city-long.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-color: #A0DAEE !important; */
+  }
+  
+  .ending-block {
+    background: url('./images/home.png') no-repeat center center;
+    background-size: contain;
+    /* height: 52px !important; */
+  }
+  
+  .road {
+    background-color: black;
+  }
+  
+  
+  
+  .c1-right {
+    background: url('./images/green_car_bg.jpg') no-repeat center center;
+    background-size: contain;
+    background-color: black;
+  }
+  
+  .c1-left {
+    background: url('./images/red_car.png') no-repeat center center;
+    background-size: contain;
+    background-color: black !important;
+  }
+  
+  .c2, .c3 {
+    background-color: black !important;
+  }
+  
+  .car-right {
+    border-bottom: 2px solid grey;
+    box-sizing: border-box;
+  }
+  
+  .l1, .l2, .l3, .log {
+    background: url('./images/log.jpg') no-repeat center center;
+    border-bottom: 2px solid #5E89B5;
+    border-top: 2px solid #5E89B5;
+    background-size: contain;
+    background-color: #6B4717 !important;
+  }
+  
+  /* .l4 {
+    background: url('./images/croc.png') no-repeat center center;
+    z-index: 100 !important;
+    background-size: contain;
+    border-bottom: 2px solid #5E89B5;
+    border-top: 2px solid #5E89B5;
+    background-color: #5E89B5 !important;
+  } */
+  
+  .l4, .l5{
+    background: url('./images/water.jpeg') no-repeat center center;
+    background-size: contain;
+    border-bottom: 2px solid #5E89B5;
+    border-top: 2px solid #5E89B5;
+    background-color: #5E89B5 !important;
+  }
+  
+  
+  
+  .frog {
+    background: url('./images/elf.png') no-repeat center center;
+    background-size: contain;
+    /* transition: height 2s; */
+  }
+
+  .frog-left {
+    background: url('./images/elf-left.png') no-repeat center center;
+    background-size: contain;
+    /* transition: height 2s; */
+  }
+  
+  /* .frog :focus {
+    height: 95%;
+  } */
+  
+  .dead {
+    background: url('./images/death.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .victory {
+    background: url('./images/heart.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+   
+  
+  
+  @media (max-width: 550px) {
+  
+      .container {
+        bottom: 5vh;
+      }
+
+      .top-container {
+        flex-direction: column;
+      }
+
+      .info {
+        width: 320px;
+        flex-direction: row;
+      }
+    
+      .grid {
+        width: 320px;
+        height: 320px;
+      }
+    
+      .grid div {
+        height: 35px;
+        width: 35px;
+      }
+  
+  
+      .mobile-navigation p {
+        height: 15px;
+        width: 15px;
+        font-size: 15px;
+        margin: auto;
+        margin-bottom: 5vh;
+      }
+    }
+  
+    @media (max-width: 320px) {
+      .container {
+        bottom: 1vh;
+      }
+  
+      .mobile-navigation p {
+        height: 10px;
+        width: 10px;
+      }
+    }
+  
