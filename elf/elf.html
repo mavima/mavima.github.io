@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Frogger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h1>Take the froggie home!</h1> -->
+      <div class="top-container">
+        <div class="info">
+            <button id="button">Start</button>
+            <h3>Seconds left: <span id="time-left">20</span></h3>
+            <h3 id="result"></h3>
+        </div>
+        <div class="mobile-navigation">
+            <p class="left"><i class="fa fa-arrow-left"></i></p>
+            <p class="up"><i class="fa fa-arrow-up"></i></p>
+            <p class="right"><i class="fa fa-arrow-right"></i></p>
+            <p class="down"><i class="fa fa-arrow-down"></i></p>
+        </div>
+        </div>
+      <div class="grid">
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="road car-right c1-right"></div>
+        <div class="road car-right c2"></div>
+        <div class="road car-right c3"></div>
+        <div class="road car-right c1-right"></div>
+        <div class="road car-right c2"></div>
+        <div class="road car-right c3"></div>
+        <div class="road car-right c1-right"></div>
+        <div class="road car-right c2"></div>
+        <div class="road car-right c3"></div>
+        <div class="road car-left c1-left"></div>
+        <div class="road car-left c2"></div>
+        <div class="road car-left c3"></div>
+        <div class="road car-left c1-left"></div>
+        <div class="road car-left c2"></div>
+        <div class="road car-left c3"></div>
+        <div class="road car-left c1-left"></div>
+        <div class="road car-left c2"></div>
+        <div class="road car-left c3"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="log-left l1"></div>
+        <div class="log-left l2"></div>
+        <div class="log-left l3"></div>
+        <div class="log-left l4"></div>
+        <div class="log-left l5"></div>
+        <div class="log-left l1"></div>
+        <div class="log-left l2"></div>
+        <div class="log-left l3"></div>
+        <div class="log-left l4"></div>
+        <div class="log-right l5"></div>
+        <div class="log-right l1"></div>
+        <div class="log-right l2"></div>
+        <div class="log-right l3"></div>
+        <div class="log-right l4"></div>
+        <div class="log-right l5"></div>
+        <div class="log-right l1"></div>
+        <div class="log-right l2"></div>
+        <div class="log-right l3"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="ending-block"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+      </div>
+
+      <audio id="jumping" src="./sounds/jumping_elf.wav"></audio>
+      <audio id="winning" src="./sounds/victory.mp3"></audio>
+      <audio id="losing" src="./sounds/death.wav"></audio>
+    </div>
+  </body>
+</html>
