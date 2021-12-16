@@ -233,11 +233,19 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentIndex].classList.add('victory')
       clearInterval(timerId)
       document.removeEventListener('keyup', moveFrog)
+      buttonLeft.removeEventListener('click', moveFrogMobileLeft);
+      buttonUp.removeEventListener('click', moveFrogMobileUp);
+      buttonRight.removeEventListener('click', moveFrogMobileRight);
+      buttonDown.removeEventListener('click', moveFrogMobileDown);
     }
   }
   
   function losingActions() {
       document.removeEventListener('keyup', moveFrog)
+      buttonLeft.removeEventListener('click', moveFrogMobileLeft);
+      buttonUp.removeEventListener('click', moveFrogMobileUp);
+      buttonRight.removeEventListener('click', moveFrogMobileRight);
+      buttonDown.removeEventListener('click', moveFrogMobileDown);
       losingSound()
       result.innerHTML = 'Game Over!'
       squares[currentIndex].classList.remove('frog', 'frog-left')
