@@ -22,6 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // render frog on starting block
     squares[currentIndex].classList.add('frog')
+
+  //elf steps
+  function elfStep() {
+    squares[currentIndex].classList.add('frog')
+    if (steps % 2 !== 0) {
+      squares[currentIndex].classList.add('frog-left')
+    } else {
+      squares[currentIndex].classList.remove('frog-left')
+    }
+    steps += 1
+  }
+
     // move frog
     function moveFrog(e) {
       squares[currentIndex].classList.remove('frog', 'frog-left')
@@ -39,53 +51,47 @@ document.addEventListener('DOMContentLoaded', () => {
           if (currentIndex + width < width * width) currentIndex += width
           break
       }
-      squares[currentIndex].classList.add('frog')
-      if (steps % 2 !== 0) {
-        squares[currentIndex].classList.add('frog-left')
-      } else {
-        squares[currentIndex].classList.remove('frog-left')
-      }
+      elfStep()
       lose()
       win()
       jumpingSound()
-      steps += 1
     }
   
   
     function moveFrogMobileLeft(e) {
-      squares[currentIndex].classList.remove('frog')
+      squares[currentIndex].classList.remove('frog', 'frog-left')
       if (currentIndex % width != 0) currentIndex -= 1
-        squares[currentIndex].classList.add('frog')
-      lose()
-      win()
-      jumpingSound()
+        elfStep()
+        lose()
+        win()
+        jumpingSound()
     }
   
     function moveFrogMobileUp(e) {
-      squares[currentIndex].classList.remove('frog')
+      squares[currentIndex].classList.remove('frog', 'frog-left')
       if (currentIndex - width >= 0) currentIndex -= width
-        squares[currentIndex].classList.add('frog')
-      lose()
-      win()
-      jumpingSound()
+        elfStep()
+        lose()
+        win()
+        jumpingSound()
     }
   
     function moveFrogMobileRight(e) {
-      squares[currentIndex].classList.remove('frog')
+      squares[currentIndex].classList.remove('frog', 'frog-left')
       if (currentIndex % width < width -1) currentIndex += 1
-        squares[currentIndex].classList.add('frog')
-      lose()
-      win()
-      jumpingSound()
+        elfStep()
+        lose()
+        win()
+        jumpingSound()
     }
   
     function moveFrogMobileDown(e) {
-      squares[currentIndex].classList.remove('frog')
+      squares[currentIndex].classList.remove('frog', 'frog-left')
       if (currentIndex + width < width * width) currentIndex += width
-        squares[currentIndex].classList.add('frog')
-      lose()
-      win()
-      jumpingSound()
+        elfStep()
+        lose()
+        win()
+        jumpingSound()
     }
     
   
