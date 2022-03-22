@@ -190,6 +190,11 @@ footer img {
   text-align: center;
 }
 
+.pile {
+  display: flex;
+  flex-direction: column;
+}
+
 .game-cards {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -232,12 +237,18 @@ footer img {
 .credit-text {
   opacity: 0.95;
   padding: 1.5rem;
-  position: absolute;
-  top: 20%;
+  position: fixed;
+  bottom: 10%;
   width: 50%;
   left: 20%;
   background-color: rgba(220,220,220, 0.9);
+  border: 0.5px solid #47216D;
 }
+
+.credit-text a {
+  color: #47216D;
+}
+
 
 #credits {
   cursor: pointer;
@@ -293,7 +304,7 @@ footer img {
   }
 
   .game-card {
-    width: 350px;
+    width: 340px;
     height: 350px;
   }
 
