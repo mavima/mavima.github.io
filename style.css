@@ -29,13 +29,15 @@ font-size: 20px !important;
   margin-top: 30px;
   padding: 10px 15px;
   background-color: #47216D;
+  border: 0.5px solid #47216D;
   border-radius: 6px;
   font-size: 20px;
   opacity: 0.9;
 }
 
 .big-button:hover {
-  background-color: rgb(97,45,148, 0.8);
+  background-color: rgba(97,45,148, 0.8);
+  border: 0.5px solid rgba(97,45,148, 0.8);
   padding: 11px 16px;
   cursor: pointer;
 }
@@ -45,6 +47,7 @@ font-size: 20px !important;
   margin-top: 5px;
   padding: 5px 10px;
   background-color: #47216D;
+  border: 0.5px solid #47216D;
   border-radius: 6px;
   font-size: 15px;
   opacity: 0.9;
