@@ -13,6 +13,24 @@ body {
     right: 0;
     margin: auto;
   }
+
+  .link-button {
+    padding: 5px 8px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #002b80;
+    color: white;
+    border: 1px solid #002b80;
+    font-family: 'Pangolin', 'sans-serif';
+    font-size: 1.3rem;
+    width: fit-content;
+    margin-left: 90%;
+  }
+
+  .link-button a {
+    text-decoration: none;
+    color: white;
+  }
   
   .top-container {
       display: flex;
